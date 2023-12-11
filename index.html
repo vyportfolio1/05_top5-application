@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_Applications top 5</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+</head>
+<body class="bg-black overflow-x-hidden">
+
+    <div class="all3screens top-0 left-0 w-screen h-screen flex flex-col items-center justify-around gap-10">
+    <!-- first screen -->
+    <div class="first w-screen h-screen flex flex-col items-center justify-around gap-10 animate-in">
+        <div class="bg absolute w-max">
+                <img src="img/bg-logo.png" alt="logo">
+        </div>
+        <div class="logo">
+      <img src="/img/Group 35 1.png" alt="logo">
+                
+                
+        </div>
+        <div class="txt">
+            <h1 class="uppercase text-white text-2xl">Vyportfolio presents</h1>
+        </div>
+    </div>
+
+    <!-- second screen -->
+    <div class="second h-screen flex flex-col items-center justify-around gap-10 animate-out" style="display: none;">
+        <div class="sec-bg absolute w-max">
+            <img src="img/bg-2.png" alt="logo">
+        </div>
+
+        <div class="txt2 relative text-white uppercase text-3xl text-center w-72">
+            <h1 class="text-yellow-400 my-3">aplication cartrage</h1>
+            <h2><span class="text-4xl">5</span> in <span class="text-4xl">1</span></h2>
+        </div>
+        <div class="txt3 relative uppercase text-white text-2xl text-center">
+            <h1>© Vyportfolio 2023</h1>
+            <h2 class="text-neutral-600 mt-5 2xl:w-[987px]">Thanks to my friend Gintaras, who showed me the code world to express myself</h2>
+        </div>
+    </div>
+
+    <!-- main games -->  
+    <div class="main-screen flex justify-center animate-out" style="display: none;">
+        <div class="bg absolute w-max">
+            <img src="img/bg-logo.png" alt="logo">
+    </div>
+
+    <div class="games relative  flex flex-wrap justify-center mt-32 xl:w-[1200px]">
+
+        <div class="calculator w-[350px] flex flex-col gap-4 p-5 bg-yellow-400">
+            <p class="text-center uppercase">calculator</p>
+            <img src="img/pix.jpg" alt="calculator">
+            <button class="text-black border-2 py-2 px-4 uppercase border-black">play</button>
+        </div>
+
+        <div class="calculator w-[350px] flex flex-col gap-4 p-5 bg-yellow-400">
+            <p class="text-center uppercase">rock paper scissors </p>
+            <img src="img/pix.jpg" alt="calculator">
+            <button class="text-black border-2 py-2 px-4 uppercase border-black">play</button>
+        </div>
+
+        <div class="calculator w-[350px] flex flex-col gap-4 p-5 bg-yellow-400">
+            <p class="text-center uppercase">Tic-Tac-Toe game</p>
+            <img src="img/pix.jpg" alt="calculator">
+            <button class="text-black border-2 py-2 px-4 uppercase border-black">play</button>
+        </div>
+
+        <div class="calculator w-[350px] flex flex-col gap-4 p-5 bg-yellow-400">
+            <p class="text-center uppercase">to do list</p>
+            <img src="img/pix.jpg" alt="calculator">
+            <button class="text-black border-2 py-2 px-4 uppercase border-black">play</button>
+        </div>
+
+        <div class="calculator w-[350px] flex flex-col gap-4 p-5 bg-yellow-400">
+            <p class="text-center uppercase">memory game</p>
+            <img src="img/pix.jpg" alt="calculator">
+            <button class="text-black border-2 py-2 px-4 uppercase border-black">play</button>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+
+ 
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
