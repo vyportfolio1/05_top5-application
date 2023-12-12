@@ -17,6 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
         mainScreen.style.display = 'flex';
         mainScreen.classList.remove('animate-out');
         mainScreen.classList.add('animate-in');
-      }, 5000);  
-    }, 6000);  
+      }, 6000);  
+    }, 4000);  
   });
