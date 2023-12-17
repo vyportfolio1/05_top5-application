@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe game</title>
+    <link rel="stylesheet" href="/TIC-TAC-TOE GAME/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="https://kit.fontawesome.com/43d8fee5c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+ 
+        <div class="box  bg-white">
+            <div class="link pt-9 pl-4">
+                <a class="border-2 border-black py-2 px-3 rounded-md text-orange-500 hover:text-orange-200" href="/index.html">Back to main meniu</a>
+            </div>
+        </div>
+ 
+            
+            <h1 class="text-center py-10 sm:text-2xl 2xl:text-4xl uppercase">tic tac toe game</h1>
+
+            <div class="middle w-screen h-full flex justify-center overflow-hidden lg:justify-between">
+                <div class="img1 hidden lg:flex">
+                    <img src="/TIC-TAC-TOE GAME/img/rbt01.png" alt="robot">   
+               </div>
+   
+               <div class="board flex flex-col items-center gap-10">
+                    <div class="vs">
+                        <img src="/TIC-TAC-TOE GAME/img/vs.png" alt="vs">
+                    </div>
+                    <div class="game w-96 h-96 bg-gray-200 flex flex-col items-center rounded-md ">
+                        <div id="board" class="board flex gap-4 flex-wrap p-6 justify-center">
+                          
+                        </div>
+                        <p id="status" class="status text-lg font-semibold mt-4"></p>
+                        <button id="resetBtn" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Reset Game</button>
+                      </div>
+                    </div>
+              
+   
+               <div class="img2 hidden lg:flex">
+                   <img src="/TIC-TAC-TOE GAME/img/humn.png" alt="human">   
+              </div>
+            </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

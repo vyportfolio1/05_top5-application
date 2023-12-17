@@ -23,11 +23,12 @@ function displayData() {
 function createDeleteButton(item) {
     const newbtn = document.createElement("button");
     newbtn.innerHTML = "delete";
+    newbtn.classList.add("border-2", "p-3");  
     newbtn.addEventListener("click", () => {
         const itemIndex = data.indexOf(item);
         if (itemIndex !== -1) {
-            data.splice(itemIndex, 1);  
-            displayData();  
+            data.splice(itemIndex, 1);
+            displayData();
         }
     });
     return newbtn;
