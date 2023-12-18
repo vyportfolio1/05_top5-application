@@ -4,31 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULATOR</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CALCULATOR/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="https://kit.fontawesome.com/43d8fee5c3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <input type="number" name="rezultat" id="rezultat" readonly>
+    <div class="h-screen w-screen -z-20 absolute bg-sky">
+        <img class="w-full h-full object-none" src="/CALCULATOR/img/calk.png" alt="game background">
+      </div>
 
-    <button onclick="updateCal('1')">1</button>
-    <button onclick="updateCal('2')">2</button>
-    <button onclick="updateCal('3')">3</button>
-    <button onclick="updateCal('4')">4</button>
-    <button onclick="updateCal('5')">5</button>
-    <button onclick="updateCal('6')">6</button>
-    <button onclick="updateCal('7')">7</button>
-    <button onclick="updateCal('8')">8</button>
-    <button onclick="updateCal('9')">9</button>
-    <button onclick="updateCal('0')">0</button>
+<div class="back pt-5">
+    <a class="border-2 border-black py-2 px-3 rounded-md text-orange-500 hover:text-orange-200" href="/index.html">Back to main meniu</a>
+</div>
+      
+          
+    <div class="all-cal">
 
-    <button onclick="updateCal('-')">-</button>
-    <button onclick="updateCal('*')">*</button>
-    <button onclick="updateCal('+')">+</button>
-    <button onclick="updateCal('/')">/</button>
+        
 
-    <button onclick="rezult()">=</button>
+        <h1 class="text-center mt-10 text-4xl pb-12">CALCULATOR</h1>
+    
 
-    <button onclick="c()">c</button> 
+        <div class="cal">
+            <div class="imp -rotate-[15deg] flex justify-center mt-[150px] mr-9">
+                <input type="text" name="rezultat" id="rezultat" readonly class="p-4 w-60 bg-input">
+            </div>
+            
+    
+            <div class="keys flex justify-center mt-[100px] ml-64 ">
+                <div class="box w-[200px] rotx text-white">
+                    <button class="ins gg" onclick="updateCal('7')">7</button>
+                    <button class="ins" onclick="updateCal('8')">8</button>
+                    <button class="ins" onclick="updateCal('9')">9</button>
+
+                    <button class="ins gg" onclick="updateCal('4')">4</button>
+                    <button class="ins" onclick="updateCal('5')">5</button>
+                    <button class="ins" onclick="updateCal('6')">6</button>
+                    
+                    <button class="ins gg" onclick="updateCal('1')">1</button>
+                    <button class="ins" onclick="updateCal('2')">2</button>
+                    <button class="ins" onclick="updateCal('3')">3</button>
+
+                    <button class="ins gg" onclick="updateCal('0')">0</button>
+                    <button class="ins" onclick="updateCal('.')">.</button>
+                    <button class="ins" onclick="calculateResult()">=</button>
+                </div>
+
+            </div>
+            
+            <div class="function flex flex-col gap-5 items-center -mt-28 -ml-16">
+                <div class="box w-[10px] rotx text-white">
+                    <button class="-mt-1 p-3" onclick="updateCal('-')">-</button>
+                    <button class="-mt-1 p-3" onclick="updateCal('+')">+</button>
+                    <button class="-mt-1 p-3" onclick="updateCal('/')">/</button>
+                    <button class="-mt-1 p-3" onclick="updateCal('*')">*</button>
+                </div>
+            </div>
+
+            <div class="keys flex justify-center -mt-[140px] ml-[590px]">
+                <div class="box w-[10px] rotx text-white">
+                    <button class="p-3" onclick="clearInput()">C</button>
+                </div>
+            </div>
+            
+
+            </div>
+
+            
+           
+      
+        </div>
+     
+    </div>
+  
 
       <script src="/CALCULATOR/index.js"></script>
 </body>

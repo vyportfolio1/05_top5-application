@@ -1,1 +1,35 @@
- 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P'
+}
+
+.bg-sky{
+    background-color: rgba(150, 199, 205, 1);
+}
+
+.bg-input{
+    background-color: rgba(151, 214, 221, 1);
+}
+
+.rotx{
+    transform: skewX(38deg) skewY(345deg);
+    
+}
+
+.ins{
+    padding: 7px;
+    margin-left: 26px;
+}
+
+.gg{
+     margin-left: 10px;
+}
+
+.all-cal {
+    position: absolute;
+    top: 34.5%;
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+}
